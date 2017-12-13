@@ -1,8 +1,9 @@
 {
-    "name": "dingo/api",
+    "name": "dingo/october/api",
     "description": "A RESTful API package for the Laravel and Lumen frameworks.",
     "keywords": [
         "api",
+        "october",
         "dingo",
         "laravel",
         "restful"
