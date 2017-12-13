@@ -71,7 +71,7 @@ class Request
      *
      * @return void
      */
-    public function __construct(Container $app, ExceptionHandler $exception, Router $router, RequestValidator $validator, EventDispatcher $events)
+    public function __construct(Container $app, ExceptionHandler $exception, Router $router, RequestValidator $validator, $events)
     {
         $this->app = $app;
         $this->exception = $exception;

@@ -542,9 +542,7 @@ class Dispatcher
 
             if (! $response->isSuccessful() && ! $response->isRedirection()) {
                 throw new InternalHttpException($response);
-            }
-
-            if (! $this->raw) {
+            } elseif (! $this->raw) {
                 $response = $response->getOriginalContent();
             }
         } catch (HttpExceptionInterface $exception) {

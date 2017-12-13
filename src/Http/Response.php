@@ -211,7 +211,7 @@ class Response extends IlluminateResponse
      *
      * @return void
      */
-    public static function setEventDispatcher(EventDispatcher $events)
+    public static function setEventDispatcher($events)
     {
         static::$events = $events;
     }
